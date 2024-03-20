@@ -6,6 +6,7 @@
 
 # Funciones agregadas
 def info_alumnos()
+- Despliega la información del equipo
 - Autor: Martha Mendoza
 - Código:
 
@@ -21,6 +22,7 @@ def info_alumnos():
 ```
 
 def circle2()
+- Dibuja un círculo
 - Autor: Mariel Perez
 - Código: 
 
@@ -37,6 +39,7 @@ def circle2(start, end):
 ```
 
 def rectangle()
+- Dibuja un rectángulo
 - Autor: Mariel Perez
 - Código:
 
@@ -59,6 +62,7 @@ def rectangle(start, end):
 ```
 
 def triangle()
+- Dibuja un triángulo
 - Autor: Martha Mendoza
 - Código:
 

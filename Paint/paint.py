@@ -1,17 +1,22 @@
-"""Paint, for drawing shapes.
-
-Exercises
-
-1. Add a color.
-2. Complete circle.
-3. Complete rectangle.
-4. Complete triangle.
-5. Add width parameter.
+"""
+Martha Mendoza Alfaro A01284654
+Mariel Perez Ferrusquía A00832811
 """
 
 from turtle import *
 
 from freegames import vector
+
+# Escribe los nombres del equipo
+def info_alumnos():
+    writer.up()
+    writer.goto(0,190)
+    writer.color('blue')
+    writer.write('Martha Mendoza Alfaro A01284654', align = 'left', font = ('Arial',10,'normal'))
+    writer.goto(0,170)
+    writer.color('pink')
+    writer.write('Mariel Perez Ferrusquía A00832811', align = 'left', font = ('Arial',10,'normal'))
+
 
 
 def line(start, end):
@@ -92,6 +97,11 @@ setup(420, 420, 370, 0)
 # registra la funcion que va a atender los eventos del mouse - te dirige a la función que atiende el click de mouse
 onscreenclick(tap)
 listen()
+
+#Define que writer es otra turtle para escribir nombres
+writer = Turtle(visible= False)
+info_alumnos()
+
 onkey(undo, 'u')
 # onkey se usa lambda no tiene nombre y no hay parametro de entrada
 onkey(lambda: color('black', 'purple'), 'P')

@@ -1,4 +1,5 @@
 """
+Equipo 10
 Martha Mendoza Alfaro A01284654
 Mariel Perez Ferrusquía A00832811
 """
@@ -56,6 +57,7 @@ def move():
     clear()
     #foodCircle.clear() 
 
+    #aqui dibuja el snake
     for body in snake:
         square(body.x, body.y, 9, 'black')
 
@@ -65,6 +67,8 @@ def move():
     yCircle = food.y + 4.5
     foodCircle.setpos(xCircle, yCircle)
     foodCircle.dot(9, "purple")
+
+    #actualiza la pantalla lo k tiene el buffer
     update()
     ontimer(move, 100) #aqui se cambia la rapidez
 

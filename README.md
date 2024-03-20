@@ -4,6 +4,10 @@
 - Mariel Perez Ferrusquía A00832811
 
 ## Actividades Freegames Python
-- [Paint](Paint)
-- [Snake](Snake)
+1. [Paint](Paint)
+2. [Snake](Snake)
+
+## Links
+- Link video Martha - repos personal
+- Link video Mariel - repos personal
 

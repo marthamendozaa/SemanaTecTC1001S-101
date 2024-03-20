@@ -82,4 +82,4 @@ def triangle(start, end):
     end_fill()
 ```
 
-![video](Paint/paintGIF.gif)
+![video](paintGIF.gif)

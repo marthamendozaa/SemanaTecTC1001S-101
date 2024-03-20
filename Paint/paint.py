@@ -4,7 +4,6 @@ Mariel Perez Ferrusquía A00832811
 """
 
 from turtle import *
-
 from freegames import vector
 
 # Escribe los nombres del equipo
@@ -52,8 +51,10 @@ def circle2(start, end):
     up()
     goto(start.x, start.y)
     down()
+    #Calcula el radio 
     r = start.x - end.x
     begin_fill()
+    #Funcion para crear el circulo con el radio calculado
     circle(r)
     end_fill()
 
@@ -65,10 +66,15 @@ def rectangle(start, end):
     #rellena el square
     begin_fill()
 
+    #Funciona por dos loops
     for count in range(2):
+        #Crea la primera parte del rectangulo
         forward(end.x - start.x)
+        #Gira
         left(90)
+        #Crea la siguiente linea del rectangulo
         forward(end.y - start.y)
+        #Gira
         left(90)
 
     end_fill()
@@ -82,8 +88,11 @@ def triangle(start, end):
     #rellena el triangulo
     begin_fill()
 
+    #Funciona por las tres lineas del triangulo
     for count in range(3):
+        #Avanza de inicio a fin
         forward(end.x - start.x)
+        #Gira
         left(120)
 
     end_fill()

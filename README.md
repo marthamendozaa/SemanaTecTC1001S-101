@@ -82,4 +82,4 @@ def triangle(start, end):
     end_fill()
 ```
 
-![video](https://tecmx-my.sharepoint.com/personal/a00832811_tec_mx/_layouts/15/stream.aspx?id=%2Fpersonal%2Fa00832811%5Ftec%5Fmx%2FDocuments%2FAttachments%2FPython%20Turtle%20Graphics%202024%2D03%2D20%2009%2D57%2D43%2Emp4&ct=1710950450697&or=OWA%2DNT%2DMail&cid=824aeab9%2Df77d%2Da084%2D3548%2Dbe5f9cb77050&ga=1&WSL=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)
+![video](GIF.gif)

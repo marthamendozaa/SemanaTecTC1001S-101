@@ -4,6 +4,6 @@
 - Mariel Perez Ferrusquía A00832811
 
 ## Actividades Freegames Python
-- Paint
-- Snake
+- [Paint](Paint)
+- [Snake](Snake)
 

@@ -10,8 +10,48 @@ from turtle import *
 from freegames import path
 
 car = path('car.gif')
-tiles = list(range(32)) * 2
+
+tiles ='''\U0001F43AMartha
+\U0001F43AMariel Gisela
+\U0001F43AVale
+\U0001F43AGoyo
+\U0001f600César Alejandro
+-Gabriel
+Calvin
+Alvaro Alejandro
+-José Daniel
+Juan Pablo
+Bryan Alejandro
+-Miguel
+Mario Raúl
+Jinelle
+Cristian Alejandro
+Roberta Giovanna
+Alejandro
+Rodrigo
+Omar Damián
+César Antonio
+Ramón Antonio
+Oscar Ariel
+Sebastián
+Bella Elisabet
+Alexa Jimena
+Luis Ángel
+Enmanuel
+Ángela
+Melissa Elvia
+Ángel de Jesús
+-Hannia
+Leonardo
+Messi'''
+
+tiles = tiles.split('\n') * 2
+
+#Inicializacion de las cartas del memorama
+#tiles = list(range(32)) * 2 # range = secuencia de valores de 0 a 31, lo convertimos en lista y lo replicamos x 2 
+#indica si ya tengo una carta destapada
 state = {'mark': None}
+#lista con True x 64 por la cant de cuadritos. todas los cuadritos estan escondidos al inicio
 hide = [True] * 64
 
 #Funcion para desplegar los nombres del equipo
@@ -20,19 +60,20 @@ def info_alumnos():
     writer.hideturtle()
     writer.up()
     writer.goto(0,230)
-    writer.color('purple')
-    writer.write('Martha Mendoza Alfaro A01284654', align = 'left', font = ('Century',12,'normal'))
+    writer.color('honeydew')
+    writer.write('Martha Mendoza Alfaro A01284654', align = 'left', font = ('Century',16,'normal'))
     writer.goto(0,210)
-    writer.color('purple')
-    writer.write('Mariel Perez Ferrusquía A00832811', align = 'left', font = ('Century',12,'normal'))
+    writer.color('honeydew')
+    writer.write('Mariel Perez Ferrusquía A00832811', align = 'left', font = ('Century',16,'normal'))
 
 
 def square(x, y):
     """Draw white square with black outline at (x, y)."""
+    #(x,y) esq sup izq
     up()
     goto(x, y)
     down()
-    color('black', 'white')
+    color('white', 'MistyRose2')
     begin_fill()
     for count in range(4):
         forward(50)
@@ -89,9 +130,9 @@ def draw():
     ontimer(draw, 100)
 
 
-shuffle(tiles)
-setup(500, 500, 370, 0)
-bgcolor("pink")
+#shuffle(tiles)
+setup(620, 620, 370, 0)
+bgcolor("LightPink")
 
 writer = Turtle(visible= False)
 info_alumnos()

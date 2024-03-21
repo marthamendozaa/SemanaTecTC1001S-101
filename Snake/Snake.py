@@ -20,13 +20,9 @@ contador = 0
 #Lista de las posiciones disponibles
 lista_mov_food = [vector(20,0), vector(-20,0), vector(0,20), vector(0,-20)]
 
-def maya():
-    pass
-
 #Funcion para desplegar los nombres del equipo
 def info_alumnos():
     color('purple')
-    maya()
     writer.hideturtle()
     writer.up()
     writer.goto(0,190)
@@ -37,12 +33,7 @@ def info_alumnos():
     writer.write('Mariel Perez Ferrusquía A00832811', align = 'left', font = ('Century',10,'normal'))
 
 def change(x, y):
-    """Change snake direction."""
-    #Contador global
-    global contador
-    #Sumar uno al contador cada vez que se detecte un cambio
-    contador += 1
-    
+    """Change snake direction.""" 
     aim.x = x
     aim.y = y
     
@@ -55,11 +46,13 @@ def move():
     """Move snake forward one segment."""
     #Contador global 
     global contador
+    #Sumar uno al contador cada vez que se detecte un cambio
+    contador += 1
     head = snake[-1].copy()
     head.move(aim)
     
     #Verifica que el contador no se haya pasado de 5
-    if contador > 4:
+    if contador > 9:
         #Asigna el movimiento a un punto de la lista
         movimiento = choice(lista_mov_food)
         #Crea una copia de la comida
@@ -106,14 +99,13 @@ def move():
     #Actualiza la pantalla
     update()
     #Cada tiempo manda a llamar a la funcion
-    ontimer(move, 100)
+    ontimer(move, 500)
    
    
-writer = Turtle(visible= False)
-info_alumnos()
-
 #Dimensiones de la ventana, ancho, alto, esq. superior izquierda en x, esq. superior izquierda en y
 setup(420, 420, 370, 0)
+writer = Turtle(visible= False)
+info_alumnos()
 #Oculta el cursor
 hideturtle()
 tracer(False)
@@ -129,4 +121,3 @@ onkey(lambda: change(0, -10), 'Down')
 move()
 #Llama a la funcion de done()
 done()
-

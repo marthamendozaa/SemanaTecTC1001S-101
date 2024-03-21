@@ -20,10 +20,10 @@ def info_alumnos():
     writer.hideturtle()
     writer.up()
     writer.goto(0,230)
-    writer.color('blue')
+    writer.color('purple')
     writer.write('Martha Mendoza Alfaro A01284654', align = 'left', font = ('Century',12,'normal'))
     writer.goto(0,210)
-    writer.color('pink')
+    writer.color('purple')
     writer.write('Mariel Perez Ferrusquía A00832811', align = 'left', font = ('Century',12,'normal'))
 
 
@@ -91,6 +91,7 @@ def draw():
 
 shuffle(tiles)
 setup(500, 500, 370, 0)
+bgcolor("pink")
 
 writer = Turtle(visible= False)
 info_alumnos()

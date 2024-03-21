@@ -7,21 +7,15 @@ Mariel Perez Ferrusquía A00832811
 from random import randrange
 from turtle import *
 from freegames import square, vector
+from random import randrange, choice
 
 food = vector(50, 10)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
-#pto4 = pto1
-#pto4.x = 700 
-#se modifica pto1 a travez del pto4
-"""
-pto1 = vector(100,100)
-pto2 = vector(200,100)
-pto4 = pto2.copy()
-pto4.x = 1000
-pto4.y = 1000
-"""
+#Lista random de colores
+colores = ["navy", "green", "purple", "pink", "black", "yellow", "blue", "DarkOrange", "cyan", "magenta", "OliveDrab"]
+
 
 def change(x, y):
     """Change snake direction."""
@@ -50,30 +44,47 @@ def move():
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
+        #elimina la comida
         foodCircle.clear()
+        # elige un color random para food y snake
+        colorFood = choice(colores)
+        colorSnake = choice(colores)
+        # guarda nuevo color
+        snakeSquare.pencolor(colorSnake)
+        foodCircle.pencolor(colorFood)
+        
     else:
         snake.pop(0) #elimina 0 de la lista, simula el movimiento el 0 es el primer vector dentro de la lista snake
 
     clear()
-    #foodCircle.clear() 
 
     #aqui dibuja el snake
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        color2 = snakeSquare.pencolor()
+        square(body.x, body.y, 9, color2)
 
-    #square(food.x, food.y, 9, 'green')
+    # aqui dibuja a la comida
     foodCircle.up()
     xCircle = food.x + 4.5
     yCircle = food.y + 4.5
     foodCircle.setpos(xCircle, yCircle)
-    foodCircle.dot(9, "purple")
+    #mantener color cada movement
+    color = foodCircle.pencolor()
+    foodCircle.dot(9, color)
 
-    #actualiza la pantalla lo k tiene el buffer
+    #actualiza la pantalla lo que tiene el buffer
     update()
     ontimer(move, 100) #aqui se cambia la rapidez
 
-
+#Turtle para comida
 foodCircle = Turtle(visible=False)
+#Color inicializado, empieza en morado
+foodCircle.pencolor("purple")
+
+#Turtle para snake
+snakeSquare = Turtle(visible=False)
+#Color inicializado, empieza en negro
+snakeSquare.pencolor("black")
 
 #Dimensiones de la ventana - ancho, alto, 
 setup(420, 420, 370, 0)

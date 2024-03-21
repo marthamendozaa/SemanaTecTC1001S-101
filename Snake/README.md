@@ -88,4 +88,4 @@ if head == food:
     foodCircle.pencolor(colorFood)
 ```
 
-![video](paintGIF.gif)
+![video](Snake/VideoSnake.gif)

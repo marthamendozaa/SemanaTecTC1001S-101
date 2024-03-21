@@ -11,3 +11,5 @@
 - Link video Martha - repos personal
 - Link video Mariel - repos personal
 
+## Foto del Equipo
+![Foto](FotoEquipo.jpg)

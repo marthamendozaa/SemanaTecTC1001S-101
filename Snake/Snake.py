@@ -99,7 +99,7 @@ def move():
     #Actualiza la pantalla
     update()
     #Cada tiempo manda a llamar a la funcion
-    ontimer(move, 500)
+    ontimer(move, 100)
    
    
 #Dimensiones de la ventana, ancho, alto, esq. superior izquierda en x, esq. superior izquierda en y

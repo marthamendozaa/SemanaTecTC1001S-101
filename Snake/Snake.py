@@ -1,5 +1,4 @@
 """Snake, classic arcade game.
-
 Exercises
 
 1. How do you make the snake faster or slower?

@@ -10,7 +10,7 @@
 
 ## Reflexiones Personales
 - [Reflexión Martha Mendoza](ReflexiónMartha.mp4)
-- Link video Mariel - repos personal
+- [Reflexión Mariel Perez](ReflexiónMariel.mp4)
 
 ## Foto del Equipo
 ![Foto](FotoEquipo.jpg)

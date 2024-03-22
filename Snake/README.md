@@ -87,5 +87,4 @@ if head == food:
     snakeSquare.pencolor(colorSnake)
     foodCircle.pencolor(colorFood)
 ```
-
 ![video](VideoSnake.gif)

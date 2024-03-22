@@ -101,4 +101,5 @@ bgcolor("LightPink")
 screener = Turtle(visible= False)
 screener.screen.title("Martha Mendoza y Mariel Pérez")
 ```
-![video](VideoSnake.gif)
+
+![video](memoramagif.gif)

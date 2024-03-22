@@ -8,8 +8,8 @@
 2. [Snake](Snake)
 3. [Memorama](Memorama)
 
-## Links
-- Link video Martha - repos personal
+## Reflexiones Personales
+- [Reflexión Martha Mendoza](ReflexiónMartha.mp4)
 - Link video Mariel - repos personal
 
 ## Foto del Equipo

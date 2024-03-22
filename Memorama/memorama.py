@@ -10,6 +10,7 @@ from freegames import path
 
 car = path('car.gif')
 
+#Lista de emojis de animales
 tiles ='''\U0001F42CDelfín
 \U0001F988Tiburón
 \U0001F419Pulpo
@@ -63,7 +64,7 @@ def info_taps():
     writer2.color('honeydew')
     writer2.write('Contador: ' + str(contador), align='left', font=('Cascadia Mono', 14, 'normal'))
 
-#Funcion para desplegar la informacion del equipo
+#Funcion para desplegar la informacion del equipo y título
 def info_alumnos():
     writer.hideturtle()
     writer.up()
@@ -73,6 +74,9 @@ def info_alumnos():
     writer.goto(-290, 250)
     writer.color('honeydew')
     writer.write('Mariel Perez Ferrusquía A00832811', align='left', font=('Cascadia Mono', 14, 'normal'))
+    writer.goto(-150, 210)
+    writer.color('honeydew')
+    writer.write('\U0001F337\U0001F43BMemorama de Animales\U0001F43A\U0001F337', align='left', font=('Cascadia Mono', 20, 'normal'))
 
 #Funcion para desplegar el mensaje ganador
 def info_ganador():
@@ -153,7 +157,7 @@ def draw():
     ontimer(draw, 100)
 
 
-shuffle(tiles)
+#shuffle(tiles)
 setup(620, 620, 370, 0)
 bgcolor("LightPink")
 

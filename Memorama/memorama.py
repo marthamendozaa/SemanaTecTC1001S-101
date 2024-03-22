@@ -10,38 +10,38 @@ from freegames import path
 
 car = path('car.gif')
 
-tiles ='''\U0001F43AMartha
-\U0001F43AMariel Gisela
-\U0001F43AVale
-\U0001F43AGoyo
-\U0001f600César Alejandro
--Gabriel
-Calvin
-Alvaro Alejandro
--José Daniel
-Juan Pablo
-Bryan Alejandro
--Miguel
-Mario Raúl
-Jinelle
-Cristian Alejandro
-Roberta Giovanna
-Alejandro
-Rodrigo
-Omar Damián
-César Antonio
-Ramón Antonio
-Oscar Ariel
-Sebastián
-Bella Elisabet
-Alexa Jimena
-Luis Ángel
-Enmanuel
-Ángela
-Melissa Elvia
-Ángel de Jesús
--Hannia
-Leonardo'''
+tiles ='''\U0001F42CDelfín
+\U0001F988Tiburón
+\U0001F419Pulpo
+\U0001F43ALobo
+\U0001F40ACocodrilo
+\U0001F40DSerpiente
+\U0001F422Tortuga
+\U0001F438Rana
+\U0001F985Águila
+\U0001F986Pato
+\U0001F414Gallina
+\U0001F424Pollo
+\U0001F426Pájaro
+\U0001F43BOso
+\U0001F407Conejo
+\U0001F400Rata
+\U0001F418Elefante
+\U0001F992Jirafa
+\U0001F42ACamello
+\U0001F416Cerdo
+\U0001F404Vaca
+\U0001F98CVenado
+\U0001F40ECaballo
+\U0001F405Tigre
+\U0001F981León
+\U0001F408Gato
+\U0001F415Perro
+\U0001F98AZorro
+\U0001F412Mono
+\U0001F98DGorila
+\U0001F993Cebra
+\U0001F427Pinguino'''
 
 tiles = tiles.split('\n') * 2
 
@@ -153,7 +153,7 @@ def draw():
     ontimer(draw, 100)
 
 
-#shuffle(tiles)
+shuffle(tiles)
 setup(620, 620, 370, 0)
 bgcolor("LightPink")
 
